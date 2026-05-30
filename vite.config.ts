@@ -4,5 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/personal-web-ai/',
+  // Relative base so assets work on both github.io/personal-web-ai and agunghl.dev
+  base: './',
 })

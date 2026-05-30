@@ -1,6 +1,7 @@
 export const site = {
   name: 'Agung Hanifan Lutfiyanto',
   initials: 'AHL',
+  domain: 'agunghl.dev',
   location: 'Melbourne, Australia',
   linkedin: 'https://www.linkedin.com/in/agunghanifan/',
   email: 'agunghl.au@gmail.com',
