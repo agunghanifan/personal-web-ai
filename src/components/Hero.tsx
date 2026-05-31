@@ -59,6 +59,14 @@ export default function Hero() {
           <a href="#projects" className="btn-ghost">
             View Projects
           </a>
+          <a
+            href={site.blog}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost"
+          >
+            Read Blog →
+          </a>
         </div>
 
         <div

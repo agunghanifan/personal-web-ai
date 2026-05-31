@@ -11,21 +11,37 @@ export default function Nav() {
       <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
         {navLinks.map((link) => (
           <li key={link.href}>
-            <a href={link.href} className="nav-link">
+            <a
+              href={link.href}
+              className="nav-link"
+              {...(link.external
+                ? { target: '_blank', rel: 'noopener noreferrer' }
+                : {})}
+            >
               {link.label}
             </a>
           </li>
         ))}
       </ul>
 
-      <a
-        href={site.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-coral text-sm px-5 py-2.5"
-      >
-        Connect →
-      </a>
+      <div className="flex items-center gap-3">
+        <a
+          href={site.blog}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-ghost text-sm px-4 py-2.5 md:hidden"
+        >
+          Blog →
+        </a>
+        <a
+          href={site.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-coral text-sm px-5 py-2.5"
+        >
+          Connect →
+        </a>
+      </div>
     </nav>
   )
 }

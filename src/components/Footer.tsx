@@ -12,7 +12,10 @@ export default function Footer() {
           © 2026 All rights reserved · UNDIP Adv. Diploma EE · {site.location}
         </p>
         <p className="text-xs mt-2 mb-0 footer-muted">
-          Hand-coded by <Logo className="text-xs inline" /> · React · TypeScript · Tailwind
+          Hand-coded by <Logo className="text-xs inline" /> · React · TypeScript · Tailwind ·{' '}
+          <a href={site.blog} target="_blank" rel="noopener noreferrer" className="text-coral">
+            Blog
+          </a>
         </p>
       </div>
 
